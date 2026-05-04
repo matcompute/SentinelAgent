@@ -1,0 +1,91 @@
+:root {
+  --bg-dark: #000000;
+  --bg-card: #0a0a0a;
+  --terminal-green: #00ff41;
+  --terminal-dim: #008f11;
+  --error-red: #ff3131;
+  --border: #1a1a1a;
+  --text-main: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+.terminal-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.control-panel {
+  width: 380px;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--border);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-log {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--terminal-green);
+  box-shadow: 0 0 10px var(--terminal-green);
+}
+
+.log-entry {
+  margin-bottom: 12px;
+  border-left: 2px solid var(--border);
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+.action-btn {
+  background: transparent;
+  border: 1px solid var(--terminal-green);
+  color: var(--terminal-green);
+  padding: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.action-btn:hover {
+  background: var(--terminal-green);
+  color: var(--bg-dark);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+.file-view {
+  background: #050505;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 12px;
+}
