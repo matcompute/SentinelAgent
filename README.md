@@ -73,4 +73,4 @@ npm run dev
 
 ---
 
-*This project is part of a Senior AI/ML Portfolio demonstrating mastery in Agentic Systems and Autonomous Orchestration.*
+*This project is part of a Senior AI/ML Portfolio by **Mulat Ayinet Tiruye**, demonstrating mastery in Agentic Systems and Autonomous Orchestration.*
